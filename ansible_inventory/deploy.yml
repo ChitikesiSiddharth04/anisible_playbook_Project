@@ -1,0 +1,13 @@
+- hosts: local
+  tasks:
+    - name: Ensure Docker is running
+      shell: open -a Docker || echo "Docker is already running"
+      args:
+        chdir: ~/ansible_docker_project
+    - name: Build and start Docker Compose services
+      command: docker compose up -d --build
+      args:
+        chdir: ~/ansible_docker_project
+    - name: Print success message
+      debug:
+        msg: "Web app deployed! Access it at http://localhost:8080"
