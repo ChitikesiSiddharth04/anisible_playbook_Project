@@ -261,7 +261,3 @@ docker compose down
 
 ## Acknowledgments
 This guide is based on the work of Siddharth Chitikesi (2022BCD0021) and adapted for clarity and reproducibility.
-
---- 
-
-Feel free to save this as `README.md` in your project directory! Let me know if you’d like adjustments.
